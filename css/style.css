@@ -53,18 +53,34 @@ header a:hover {
 }
 
 .hero iframe{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0.3rem 0.3rem 0.5rem;
 
 }
 
+.hero h2 {
+    color: #FFF;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
 
+.hero i {
+    color: #FFF;
+    font-size: 2rem;
+    opacity: 0.9;
+}
+.hero i:hover {
+    opacity: 1;
+    text-shadow: 0.2rem 0.2rem 0.4rem;
 
+}
 
 .hero form {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 footer {
