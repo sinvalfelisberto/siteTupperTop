@@ -15,13 +15,13 @@ header {
     align-content: center;
 }
 
+
 header nav ul{
     display: flex;
 }
 
 header a {
     margin-left: 20px;
-    color: #FFF;
     font-size: 1.2rem;
     text-transform: capitalize;
 }
@@ -29,6 +29,7 @@ header a {
 header a:hover {
     color: #06badd;
 }
+
 
 .hero {
     background-color: #06badd;
@@ -39,14 +40,14 @@ header a:hover {
     text-align: center;
 }
 
-.hero h1 {
-    color: #FFF;
+h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
+    margin-top: 30px;
+    width: 70%;
 }
 
 .hero p {
-    color: #FFF;
     margin-bottom: 30px;
     text-align: justify;
     width: 70%;
@@ -59,33 +60,107 @@ header a:hover {
 
 }
 
-.hero h2 {
+header a, footer, h1, h2, h3, p, i {
     color: #FFF;
+}
+
+.hero h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-top: 15px;
 }
 
+.hero h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
 .hero i {
-    color: #FFF;
     font-size: 2rem;
     opacity: 0.9;
+    transition: 0.5s;
 }
 .hero i:hover {
     opacity: 1;
-    text-shadow: 0.2rem 0.2rem 0.4rem;
-
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+    transform: scale(1.3, 1.3);
 }
 
 .hero form {
     display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    padding: 30px 50px;
+}
+
+.hero form input {
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.hero form .btn-enviar {
+    padding: 15px;
+    border: none;
+    background-color: #d61284;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 5px;
+    opacity: 0.9;
+    max-width: 150px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hero form .btn-enviar:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 0.2rem 0.2rem 0.4rem #000;
+}
+
+
+.conteudo {
+    background-color: #0EC4B5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.artigo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.artigo:nth-child(1), .artigo:nth-child(3), .artigo:nth-child(5), .artigo:last-child {
+    flex-direction: row-reverse;
+}
+
+
+.artigo img {
+    width: 300px;
+}
+
+.artigo p {
+    margin: 15px;
+    padding: 20px;
+}
+
+
+
+.foto {
+    width: 100%;
+    flex: none;
 }
 
 footer {
     background-color: #d61284;
-    color: #FFF;
     width: 100%;
     position: relative; /*fica por baixo*/
     bottom: 0;
@@ -127,8 +202,24 @@ footer i {
         font-size: 2.0rem;
 
     }
+
+    .hero p {
+        width: 95%;
+    }
+
     .hero iframe {
     width: 100%;
+    }
+
+    .hero form {
+        width: 100%;
+    }
+    .hero form input {
+        width: 100%;
+    }
+
+    .conteudo {
+        flex-direction: column;
     }
 
 }
