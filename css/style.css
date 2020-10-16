@@ -135,16 +135,26 @@ header a, footer, h1, h2, h3, p, i {
 
 .artigo {
     display: flex;
+    width: 60%;
+    justify-items: start;
     justify-content: space-between;
     margin: 20px;
-}
-.artigo:nth-child(1), .artigo:nth-child(3), .artigo:nth-child(5), .artigo:last-child {
-    flex-direction: row-reverse;
 }
 
 
 .artigo img {
-    width: 300px;
+    width: 350px;
+    border-radius: 15px;
+    border: 3px solid #075852;
+    transition: 0.8s;
+}
+
+.artigo img:hover{
+    border: 3px solid #d61284;
+    border-radius: 15px;
+    box-shadow: 0.2rem 0.2rem 0.4rem #000;
+    position: relative;
+
 }
 
 .artigo p {
@@ -156,7 +166,6 @@ header a, footer, h1, h2, h3, p, i {
 
 .foto {
     width: 100%;
-    flex: none;
 }
 
 footer {
@@ -211,6 +220,10 @@ footer i {
     width: 100%;
     }
 
+    .hero i {
+        font-size: 2.3rem;
+    }
+
     .hero form {
         width: 100%;
     }
@@ -218,8 +231,11 @@ footer i {
         width: 100%;
     }
 
-    .conteudo {
+    .artigo {
         flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 80%;
     }
 
 }
