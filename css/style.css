@@ -213,6 +213,11 @@ footer {
     align-items: center;
 }
 
+.rodape {
+    position: relative;
+    text-align: center;
+}
+
 footer ul {
     display: flex;
 }
