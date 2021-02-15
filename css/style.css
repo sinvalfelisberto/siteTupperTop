@@ -1,13 +1,16 @@
-html, body {
+html,
+body {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+
 header img {
     width: 300px;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
+
 header {
     background-color: #d61284;
     width: 100%;
@@ -19,7 +22,7 @@ header {
 }
 
 
-header nav ul{
+header nav ul {
     display: flex;
 }
 
@@ -56,14 +59,20 @@ h1 {
     width: 70%;
 }
 
-.hero iframe{
+.hero iframe {
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0.3rem 0.3rem 0.5rem;
 
 }
 
-header a, footer, h1, h2, h3, p, i {
+header a,
+footer,
+h1,
+h2,
+h3,
+p,
+i {
     color: #FFF;
 }
 
@@ -83,6 +92,7 @@ header a, footer, h1, h2, h3, p, i {
     opacity: 0.9;
     transition: 0.5s;
 }
+
 .hero i:hover {
     opacity: 1;
     text-shadow: 0.2rem 0.2rem 0.4rem #000;
@@ -152,7 +162,7 @@ header a, footer, h1, h2, h3, p, i {
     transition: 0.8s;
 }
 
-.artigo img:hover{
+.artigo img:hover {
     border: 3px solid #d61284;
     border-radius: 15px;
     box-shadow: 0.2rem 0.2rem 0.4rem #000;
@@ -175,7 +185,8 @@ header a, footer, h1, h2, h3, p, i {
 footer {
     background-color: #d61284;
     width: 100%;
-    position: relative; /*fica por baixo*/
+    position: relative;
+    /*fica por baixo*/
     bottom: 0;
     right: 0;
     padding: 30px;
@@ -195,6 +206,7 @@ footer li {
 footer li:first-child {
     margin-left: 0;
 }
+
 footer i {
     color: #FFF;
     font-size: 2rem;
@@ -204,9 +216,11 @@ footer i {
     header {
         flex-direction: column;
     }
+
     header img {
         margin-bottom: 20px;
     }
+
     .hero {
         padding: 20px 20px
     }
@@ -221,7 +235,7 @@ footer i {
     }
 
     .hero iframe {
-    width: 100%;
+        width: 100%;
     }
 
     .hero i {
@@ -230,7 +244,8 @@ footer i {
 
     .hero form {
         width: 100%;
-}
+    }
+
     .hero form input {
         width: 100%;
     }
@@ -239,6 +254,10 @@ footer i {
         flex-direction: column;
         align-items: center;
         justify-items: center;
+        width: 80%;
+    }
+
+    .artigo img {
         width: 80%;
     }
 
