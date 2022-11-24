@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+body * {
+    color: azure;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 3rem;
+    padding: 0 1.3rem;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+
+
+
+.button {
+    background-color: rgb(47, 47, 249);
+    color: azure;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.button:hover {
+    background-color: rgb(34, 34, 212);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-color: rgb(88, 185, 185);
+    gap: 1.5rem;
+    height: 100vh;
+}
+
+.caixa {
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    width: 14rem;
+    border: 4px solid black;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    box-sizing:content-box;
+}
+
+.caixa:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 12px black;
+}
+
+.caixa-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+    height: 4rem;
+    width: 100%;
+}
+
+.caixa-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    height: 8rem;
+    width: 100%;
+}
+
+.caixa-body p {
+    padding-left: 10px;
+}
+
+.caixa-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 65, 161);
+    height: 4rem;
+    
+}
+
+#final {
+    height: 100vh;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#outrofinal {
+    height: 100vh;
+    background-color: rgb(184, 11, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
